@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-myrtle-skunk.sh
-        container: qc.acc_snippy-rust-bear
+        - /usr/bin/env sh .sqa/script.woozy-ultramarine-tamarin.sh
+        container: qc.acc_hilly-tan-gharial
   QC.Doc:
     repos:
       github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-lavender-vulture.sh
-        container: qc.doc_baggy-seashell-iguana
+        - /usr/bin/env sh .sqa/script.sickly-periwinkle-badger.sh
+        container: qc.doc_nippy-rose-bobcat
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-purple-moorhen.sh
-        container: qc.doc_pasty-lilac-wolfhound
+        - /usr/bin/env sh .sqa/script.nerdy-ochre-leopard.sh
+        container: qc.doc_silly-taupe-wolf
   QC.Lic:
     repos:
       github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-sepia-squirt.sh
-        container: qc.lic_craggy-taupe-shrew
+        - /usr/bin/env sh .sqa/script.droopy-harlequin-wolfhound.sh
+        container: qc.lic_lumpy-yellow-kakapo
   QC.Ver:
     repos:
       github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-pink-bongo.sh
-        container: qc.ver_beady-yellow-mongoose
+        - /usr/bin/env sh .sqa/script.flabby-smalt-bird.sh
+        container: qc.ver_stuffy-fuchsia-capybara
 timeout: 5400
