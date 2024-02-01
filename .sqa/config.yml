@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jkomijani/normflow_:
+      branch: normflow_public_v1.1
+      repo: https://github.com/jkomijani/normflow_
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/jkomijani/normflow_ git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-myrtle-skunk.sh
+        container: qc.acc_snippy-rust-bear
+  QC.Doc:
+    repos:
+      github.com/jkomijani/normflow_ find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-lavender-vulture.sh
+        container: qc.doc_baggy-seashell-iguana
+      github.com/jkomijani/normflow_ git:
+        commands:
+        - /usr/bin/env sh .sqa/script.leaky-purple-moorhen.sh
+        container: qc.doc_pasty-lilac-wolfhound
+  QC.Lic:
+    repos:
+      github.com/jkomijani/normflow_ licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-sepia-squirt.sh
+        container: qc.lic_craggy-taupe-shrew
+  QC.Ver:
+    repos:
+      github.com/jkomijani/normflow_ get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-pink-bongo.sh
+        container: qc.ver_beady-yellow-mongoose
+timeout: 5400
