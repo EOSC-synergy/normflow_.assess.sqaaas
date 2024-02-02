@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-olivine-hedgehog.sh
-        container: qc.acc_gummy-lavender-okapi
+        - /usr/bin/env sh .sqa/script.hazy-lime-urchin.sh
+        container: qc.acc_dorky-cornflower-chow
   QC.Doc:
     repos:
       github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-amber-tzu.sh
-        container: qc.doc_cozy-green-bongo
+        - /usr/bin/env sh .sqa/script.flabby-pear-heron.sh
+        container: qc.doc_sunny-pumpkin-tarsier
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-chocolate-retriever.sh
-        container: qc.doc_crabby-teal-heron
+        - /usr/bin/env sh .sqa/script.scaly-cornflower-moose.sh
+        container: qc.doc_surly-razzmatazz-chinook
   QC.Lic:
     repos:
       github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-olive-panda.sh
-        container: qc.lic_droopy-ultramarine-tortoise
+        - /usr/bin/env sh .sqa/script.bluesy-violet-wolfhound.sh
+        container: qc.lic_geeky-tangerine-cassowary
   QC.Ver:
     repos:
       github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-amaranth-hedgehog.sh
-        container: qc.ver_ready-black-snail
+        - /usr/bin/env sh .sqa/script.randy-brass-spider.sh
+        container: qc.ver_shaky-pear-giraffe
 timeout: 5400
