@@ -5,5 +5,5 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    cffconvert --validate
+    licensee detect . --confidence 60 --json 
 )

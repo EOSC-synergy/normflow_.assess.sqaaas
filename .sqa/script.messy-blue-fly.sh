@@ -5,5 +5,5 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    bandit -f json --quiet  --confidence-level high --severity-level high --recursive .
+    mdl --json  .
 )

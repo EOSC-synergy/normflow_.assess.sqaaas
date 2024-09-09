@@ -5,5 +5,5 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    git rev-parse --is-inside-work-tree
+    cffconvert --validate 
 )

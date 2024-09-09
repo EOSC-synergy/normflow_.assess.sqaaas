@@ -5,5 +5,5 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    mdl --json .
+    git rev-parse --is-inside-work-tree 
 )

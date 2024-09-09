@@ -5,5 +5,5 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    licensee detect . --confidence 60 --json
+    git rev-parse --is-inside-work-tree 
 )
