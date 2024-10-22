@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/jkomijani/normflow_ &&
-    licensee detect . --confidence 60 --json 
+cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
+    licensee detect . --confidence 60 --json
 )

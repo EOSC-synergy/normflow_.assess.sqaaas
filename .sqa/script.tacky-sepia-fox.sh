@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/jkomijani/normflow_ &&
-    find_doc_files.py --file_type all
+cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
+    cffconvert --validate
 )

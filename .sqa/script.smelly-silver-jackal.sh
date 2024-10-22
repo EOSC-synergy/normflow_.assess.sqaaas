@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/jkomijani/normflow_ &&
-    cffconvert --validate 
+cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
+    flake8 .
 )
