@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    cffconvert --validate
+    licensee detect . --confidence 60 --json 
 )

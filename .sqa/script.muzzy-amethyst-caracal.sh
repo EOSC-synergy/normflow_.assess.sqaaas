@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    licensee detect . --confidence 60 --json
+    mdl --json  .
 )

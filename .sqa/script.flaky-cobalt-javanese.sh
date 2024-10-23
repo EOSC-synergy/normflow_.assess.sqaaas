@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    mdl --json .
+    cffconvert --validate 
 )

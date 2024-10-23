@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    git rev-parse --is-inside-work-tree
+    git rev-parse --is-inside-work-tree 
 )

@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    git rev-parse --is-inside-work-tree
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )
