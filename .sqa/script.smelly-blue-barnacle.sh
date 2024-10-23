@@ -5,5 +5,6 @@
 
 (
 cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    pytest ./tests
+    pip install pytest&&
+    pytest -sv
 )
