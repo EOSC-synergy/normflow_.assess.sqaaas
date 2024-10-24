@@ -1,70 +1,70 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-Synergy-SQAaaS/normflow_:
-      branch: normflow_public_v1.1
-      repo: https://github.com/EOSC-Synergy-SQAaaS/normflow_
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jkomijani/normflow_:
+      branch: normflow_public_v1.1
+      repo: https://github.com/jkomijani/normflow_
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-linen-fowl.sh
-        container: qc.acc_jumpy-alizarin-buffalo
+        - /usr/bin/env sh .sqa/script.messy-lemon-kiwi.sh
+        container: qc.acc_sleazy-olive-jackal
   QC.Doc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ find_doc_files.py:
+      github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-scarlet-seal.sh
-        container: qc.doc_skanky-brown-zorse
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+        - /usr/bin/env sh .sqa/script.snoopy-ultramarine-rat.sh
+        container: qc.doc_greasy-cream-bandicoot
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-russet-flamingo.sh
-        container: qc.doc_lousy-cyan-harrier
-      github.com/EOSC-Synergy-SQAaaS/normflow_ markdownlint:
+        - /usr/bin/env sh .sqa/script.messy-azure-squirt.sh
+        container: qc.doc_sickly-jade-rhinoceros
+      github.com/jkomijani/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-lilac-labradoodle.sh
-        container: qc.doc_nerdy-turquoise-javanese
+        - /usr/bin/env sh .sqa/script.hazy-lilac-kudu.sh
+        container: qc.doc_snazzy-mauve-stingray
   QC.Lic:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ licensee:
+      github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-aqua-lizard.sh
-        container: qc.lic_gummy-cyan-lynx
+        - /usr/bin/env sh .sqa/script.pretty-sapphire-shrew.sh
+        container: qc.lic_hazy-ruby-booby
   QC.Met:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ cff-converter-python:
+      github.com/jkomijani/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-khaki-albatross.sh
-        container: qc.met_scanty-gold-tarsier
+        - /usr/bin/env sh .sqa/script.messy-maroon-abyssinian.sh
+        container: qc.met_foggy-aquamarine-kakapo
   QC.Sec:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ bandit:
+      github.com/jkomijani/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-scarlet-whippet.sh
-        container: qc.sec_homey-pink-neanderthal
+        - /usr/bin/env sh .sqa/script.wiggy-seashell-wolfhound.sh
+        container: qc.sec_hazy-ultramarine-guppy
   QC.Sty:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ flake8:
+      github.com/jkomijani/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-cyan-turkey.sh
-        container: qc.sty_pokey-brown-hamster
+        - /usr/bin/env sh .sqa/script.tacky-rose-gerbil.sh
+        container: qc.sty_squirrely-burgundy-zebu
   QC.Uni:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ pytest:
+      github.com/jkomijani/normflow_ pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-bistre-dogfish.sh
-        container: qc.uni_scanty-apricot-capuchin
+        - /usr/bin/env sh .sqa/script.clammy-cerise-bulldog.sh
+        container: qc.uni_breezy-scarlet-angelfish
   QC.Ver:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ get_git_tags.py:
+      github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-white-flamingo.sh
-        container: qc.ver_craggy-mustard-dachshund
+        - /usr/bin/env sh .sqa/script.crabby-gold-jaguar.sh
+        container: qc.ver_craggy-jade-chihuahua
 timeout: 5400

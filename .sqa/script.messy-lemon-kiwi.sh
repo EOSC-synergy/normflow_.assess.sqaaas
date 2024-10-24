@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
-    bandit -f json --quiet  --confidence-level high --severity-level high --recursive .
+cd github.com/jkomijani/normflow_ &&
+    git rev-parse --is-inside-work-tree 
 )
