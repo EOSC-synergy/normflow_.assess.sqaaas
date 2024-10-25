@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-copper-boar.sh
-        container: qc.acc_goopy-amaranth-wolf
+        - /usr/bin/env sh .sqa/script.crappy-aquamarine-crocodile.sh
+        container: qc.acc_boozy-emerald-peccary
   QC.Doc:
     repos:
       github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-pumpkin-bombay.sh
-        container: qc.doc_chummy-lemon-catfish
+        - /usr/bin/env sh .sqa/script.gimpy-fuchsia-armadillo.sh
+        container: qc.doc_snoopy-pumpkin-paradise
       github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-eggplant-dormouse.sh
-        container: qc.doc_shabby-cardinal-dalmatian
+        - /usr/bin/env sh .sqa/script.droopy-asparagus-dunker.sh
+        container: qc.doc_muzzy-celadon-owl
       github.com/jkomijani/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-mauve-grasshopper.sh
-        container: qc.doc_cheeky-maroon-duck
+        - /usr/bin/env sh .sqa/script.nippy-scarlet-ocelot.sh
+        container: qc.doc_muzzy-denim-seahorse
   QC.Lic:
     repos:
       github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-crimson-emu.sh
-        container: qc.lic_tasty-magnolia-mayfly
+        - /usr/bin/env sh .sqa/script.wimpy-cinnamon-sloth.sh
+        container: qc.lic_ugly-carmine-loon
   QC.Met:
     repos:
       github.com/jkomijani/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-charcoal-dane.sh
-        container: qc.met_lanky-grey-wombat
+        - /usr/bin/env sh .sqa/script.flabby-burgundy-weasel.sh
+        container: qc.met_surly-gamboge-shrew
   QC.Sec:
     repos:
       github.com/jkomijani/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-amethyst-raccoon.sh
-        container: qc.sec_bumpy-dandelion-dachsbracke
+        - /usr/bin/env sh .sqa/script.beady-malachite-tortoise.sh
+        container: qc.sec_leaky-razzmatazz-tortoise
   QC.Sty:
     repos:
       github.com/jkomijani/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-mustard-guppy.sh
-        container: qc.sty_slimy-myrtle-tang
+        - /usr/bin/env sh .sqa/script.flimsy-tomato-barb.sh
+        container: qc.sty_hazy-pear-rottweiler
   QC.Uni:
     repos:
       github.com/jkomijani/normflow_ pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-lilac-dalmatian.sh
-        container: qc.uni_trippy-taupe-butterfly
+        - /usr/bin/env sh .sqa/script.scummy-celadon-fox.sh
+        container: qc.uni_slimy-bistre-mau
   QC.Ver:
     repos:
       github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-turquoise-bird.sh
-        container: qc.ver_ugly-corn-starfish
+        - /usr/bin/env sh .sqa/script.lousy-jade-harrier.sh
+        container: qc.ver_sloppy-bronze-maltese
 timeout: 5400
