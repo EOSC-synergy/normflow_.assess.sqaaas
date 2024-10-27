@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-ivory-toucan.sh
-        container: qc.acc_cozy-fuchsia-dragon
+        - /usr/bin/env sh .sqa/script.nippy-ivory-lemming.sh
+        container: qc.acc_hilly-thistle-donkey
   QC.Doc:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-burgundy-ray.sh
-        container: qc.doc_frumpy-lilac-angora
+        - /usr/bin/env sh .sqa/script.wiggy-turquoise-lynx.sh
+        container: qc.doc_muggy-cerulean-wallaby
       github.com/EOSC-Synergy-SQAaaS/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cyan-frise.sh
-        container: qc.doc_sunny-wheat-crocodile
+        - /usr/bin/env sh .sqa/script.ready-buff-mouse.sh
+        container: qc.doc_scaly-ochre-dog
       github.com/EOSC-Synergy-SQAaaS/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-rose-binturong.sh
-        container: qc.doc_flabby-khaki-affenpinscher
+        - /usr/bin/env sh .sqa/script.scanty-lime-oyster.sh
+        container: qc.doc_woozy-lemon-setter
   QC.Lic:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-beige-maltese.sh
-        container: qc.lic_craggy-persimmon-cow
+        - /usr/bin/env sh .sqa/script.flimsy-brass-deer.sh
+        container: qc.lic_gloppy-coral-chicken
   QC.Met:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-harlequin-cheetah.sh
-        container: qc.met_wiggy-ultramarine-hedgehog
+        - /usr/bin/env sh .sqa/script.droopy-lilac-wolfhound.sh
+        container: qc.met_breezy-aqua-uakari
   QC.Sec:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-saffron-duck.sh
-        container: qc.sec_cozy-buff-gharial
+        - /usr/bin/env sh .sqa/script.lanky-saffron-eleuth.sh
+        container: qc.sec_sloppy-fuchsia-squirt
   QC.Sty:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-purple-rhinoceros.sh
-        container: qc.sty_gimpy-pink-shark
+        - /usr/bin/env sh .sqa/script.sloppy-olive-dunker.sh
+        container: qc.sty_fuzzy-chartreuse-toucan
   QC.Uni:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ commands:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-blue-barnacle.sh
-        container: qc.uni_nippy-bistre-chameleon
+        - /usr/bin/env sh .sqa/script.pasty-chartreuse-argentino.sh
+        container: qc.uni_nerdy-cyan-albatross
   QC.Ver:
     repos:
       github.com/EOSC-Synergy-SQAaaS/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-puce-avocet.sh
-        container: qc.ver_sickly-pink-beaver
+        - /usr/bin/env sh .sqa/script.gimpy-eggplant-chow.sh
+        container: qc.ver_snoopy-charcoal-chinook
 timeout: 5400
