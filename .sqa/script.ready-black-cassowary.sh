@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/jkomijani/normflow_ &&
-    rst-lint --level warning --format json .
+cd github.com/EOSC-Synergy-SQAaaS/normflow_ &&
+    git rev-parse --is-inside-work-tree 
 )
