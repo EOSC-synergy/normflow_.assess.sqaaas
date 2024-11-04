@@ -1,70 +1,70 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-Synergy-SQAaaS/normflow_:
-      branch: normflow_public_v1.1
-      repo: https://github.com/EOSC-Synergy-SQAaaS/normflow_
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jkomijani/normflow_:
+      branch: normflow_public_v1.1
+      repo: https://github.com/jkomijani/normflow_
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-gold-squirrel.sh
-        container: qc.acc_cheeky-aqua-cougar
+        - /usr/bin/env sh .sqa/script.craggy-corn-panda.sh
+        container: qc.acc_hasty-malachite-dogfish
   QC.Doc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ find_doc_files.py:
+      github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-turquoise-chameleon.sh
-        container: qc.doc_shabby-saffron-wombat
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+        - /usr/bin/env sh .sqa/script.geeky-lilac-okapi.sh
+        container: qc.doc_muzzy-linen-hound
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-linen-clam.sh
-        container: qc.doc_cloudy-yellow-mayfly
-      github.com/EOSC-Synergy-SQAaaS/normflow_ markdownlint:
+        - /usr/bin/env sh .sqa/script.squirrely-dandelion-grouse.sh
+        container: qc.doc_trippy-dandelion-quokka
+      github.com/jkomijani/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cerulean-woodlouse.sh
-        container: qc.doc_droopy-blue-cat
+        - /usr/bin/env sh .sqa/script.craggy-puce-ladybird.sh
+        container: qc.doc_skanky-cardinal-maltese
   QC.Lic:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ licensee:
+      github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-flax-wrasse.sh
-        container: qc.lic_sloppy-eggplant-newt
+        - /usr/bin/env sh .sqa/script.cheeky-zucchini-manatee.sh
+        container: qc.lic_slimy-cinnabar-seal
   QC.Met:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ cff-converter-python:
+      github.com/jkomijani/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-dandelion-bat.sh
-        container: qc.met_wiggy-ruby-nightingale
+        - /usr/bin/env sh .sqa/script.skinny-peach-labradoodle.sh
+        container: qc.met_stuffy-lemon-ray
   QC.Sec:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ bandit:
+      github.com/jkomijani/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-black-bobcat.sh
-        container: qc.sec_cheeky-magenta-squirt
+        - /usr/bin/env sh .sqa/script.lousy-ruby-akita.sh
+        container: qc.sec_flimsy-white-heron
   QC.Sty:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ flake8:
+      github.com/jkomijani/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-tangerine-flounder.sh
-        container: qc.sty_pokey-cinnamon-snake
+        - /usr/bin/env sh .sqa/script.wiggy-ochre-foxhound.sh
+        container: qc.sty_randy-khaki-cuscus
   QC.Uni:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ pytest:
+      github.com/jkomijani/normflow_ pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-amaranth-gar.sh
-        container: qc.uni_cloudy-sepia-vulture
+        - /usr/bin/env sh .sqa/script.lanky-wisteria-mayfly.sh
+        container: qc.uni_cloudy-khaki-bee
   QC.Ver:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ get_git_tags.py:
+      github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-emerald-flounder.sh
-        container: qc.ver_surly-mustard-audemer
+        - /usr/bin/env sh .sqa/script.shabby-teal-forest.sh
+        container: qc.ver_scanty-dandelion-olm
 timeout: 5400
