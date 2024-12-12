@@ -1,74 +1,70 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-Synergy-SQAaaS/normflow_:
-      branch: snapshots
-      repo: https://github.com/EOSC-Synergy-SQAaaS/normflow_
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jkomijani/normflow_:
+      branch: snapshots
+      repo: https://github.com/jkomijani/normflow_
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-persimmon-orangutan.sh
-        container: qc.acc_geeky-wheat-beagle
+        - /usr/bin/env sh .sqa/script.cozy-emerald-ibis.sh
+        container: qc.acc_flimsy-coral-penguin
   QC.Doc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ find_doc_files.py:
+      github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-platinum-whippet.sh
-        container: qc.doc_sloppy-corn-argentino
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+        - /usr/bin/env sh .sqa/script.tasty-pear-blue.sh
+        container: qc.doc_shabby-buff-cockroach
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-black-cassowary.sh
-        container: qc.doc_ready-green-leopard
-      github.com/EOSC-Synergy-SQAaaS/normflow_ markdownlint:
+        - /usr/bin/env sh .sqa/script.grumpy-olive-gorilla.sh
+        container: qc.doc_snazzy-fuchsia-catfish
+      github.com/jkomijani/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cobalt-toad.sh
-        container: qc.doc_breezy-russet-tiger
-      github.com/EOSC-Synergy-SQAaaS/normflow_ restructuredtext-lint:
-        commands:
-        - /usr/bin/env sh .sqa/script.squirrely-celadon-woodpecker.sh
-        container: qc.doc_sleazy-emerald-budgerigar
+        - /usr/bin/env sh .sqa/script.paltry-cream-foxhound.sh
+        container: qc.doc_slimy-harlequin-frog
   QC.Lic:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ licensee:
+      github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-charcoal-budgerigar.sh
-        container: qc.lic_lovely-myrtle-sparrow
+        - /usr/bin/env sh .sqa/script.queasy-wheat-falcon.sh
+        container: qc.lic_woozy-auburn-slug
   QC.Met:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ cff-converter-python:
+      github.com/jkomijani/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-buff-octopus.sh
-        container: qc.met_squirrely-smalt-lobster
+        - /usr/bin/env sh .sqa/script.sleepy-lemon-malamute.sh
+        container: qc.met_chummy-teal-falcon
   QC.Sec:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ bandit:
+      github.com/jkomijani/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-malachite-leopard.sh
-        container: qc.sec_bumpy-ivory-macaque
+        - /usr/bin/env sh .sqa/script.squeaky-black-kakapo.sh
+        container: qc.sec_messy-tan-giraffe
   QC.Sty:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ flake8:
+      github.com/jkomijani/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-rust-hummingbird.sh
-        container: qc.sty_muggy-ecru-crab
+        - /usr/bin/env sh .sqa/script.bumpy-orange-deer.sh
+        container: qc.sty_pokey-tomato-rhinoceros
   QC.Uni:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ pytest:
+      github.com/jkomijani/normflow_ pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-smalt-millipede.sh
-        container: qc.uni_wimpy-turquoise-worm
+        - /usr/bin/env sh .sqa/script.clammy-wisteria-wolverine.sh
+        container: qc.uni_sickly-rust-dodo
   QC.Ver:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ get_git_tags.py:
+      github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-eggplant-kudu.sh
-        container: qc.ver_nerdy-yellow-hummingbird
+        - /usr/bin/env sh .sqa/script.trippy-taupe-peccary.sh
+        container: qc.ver_crabby-blue-dragon
 timeout: 5400
