@@ -5,5 +5,6 @@
 
 (
 cd github.com/jkomijani/normflow_ &&
-    pytest  --json-report  --json-report-indent 4
+    pip install pytest&&
+    pytest -sv
 )
