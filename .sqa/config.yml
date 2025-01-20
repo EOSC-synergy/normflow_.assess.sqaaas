@@ -1,70 +1,70 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-Synergy-SQAaaS/normflow_:
-      branch: tests
-      repo: https://github.com/EOSC-Synergy-SQAaaS/normflow_
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jkomijani/normflow_:
+      branch: tests
+      repo: https://github.com/jkomijani/normflow_
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-bistre-cattle.sh
-        container: qc.acc_snazzy-red-hummingbird
+        - /usr/bin/env sh .sqa/script.greasy-plum-mist.sh
+        container: qc.acc_randy-seashell-abyssinian
   QC.Doc:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ find_doc_files.py:
+      github.com/jkomijani/normflow_ find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-jade-ocelot.sh
-        container: qc.doc_freaky-cream-audemer
-      github.com/EOSC-Synergy-SQAaaS/normflow_ git:
+        - /usr/bin/env sh .sqa/script.sleazy-ecru-ragdoll.sh
+        container: qc.doc_woozy-rust-chamois
+      github.com/jkomijani/normflow_ git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-magenta-kudu.sh
-        container: qc.doc_muggy-violet-vulture
-      github.com/EOSC-Synergy-SQAaaS/normflow_ markdownlint:
+        - /usr/bin/env sh .sqa/script.scaly-magnolia-dugong.sh
+        container: qc.doc_chummy-ochre-clam
+      github.com/jkomijani/normflow_ markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-rose-kakapo.sh
-        container: qc.doc_ugly-buff-anteater
+        - /usr/bin/env sh .sqa/script.smelly-celadon-gecko.sh
+        container: qc.doc_flaky-bistre-tarsier
   QC.Lic:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ licensee:
+      github.com/jkomijani/normflow_ licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-periwinkle-seahorse.sh
-        container: qc.lic_leaky-vermilion-capybara
+        - /usr/bin/env sh .sqa/script.squeaky-cerulean-rhinoceros.sh
+        container: qc.lic_paltry-champagne-guppy
   QC.Met:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ cff-converter-python:
+      github.com/jkomijani/normflow_ cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-ruby-beetle.sh
-        container: qc.met_gummy-bistre-cheetah
+        - /usr/bin/env sh .sqa/script.crabby-tangerine-macaque.sh
+        container: qc.met_shaggy-rust-bracke
   QC.Sec:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ bandit:
+      github.com/jkomijani/normflow_ bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-violet-coati.sh
-        container: qc.sec_sunny-ivory-vole
+        - /usr/bin/env sh .sqa/script.trippy-amethyst-armadillo.sh
+        container: qc.sec_cloudy-green-dollar
   QC.Sty:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ flake8:
+      github.com/jkomijani/normflow_ flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-charcoal-gopher.sh
-        container: qc.sty_gimpy-brown-eagle
+        - /usr/bin/env sh .sqa/script.grumpy-flax-molly.sh
+        container: qc.sty_muzzy-cyan-centipede
   QC.Uni:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ commands:
+      github.com/jkomijani/normflow_ pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cream-mau.sh
-        container: qc.uni_queasy-goldenrod-numbat
+        - /usr/bin/env sh .sqa/script.hilly-ultramarine-horse.sh
+        container: qc.uni_gummy-champagne-tortoise
   QC.Ver:
     repos:
-      github.com/EOSC-Synergy-SQAaaS/normflow_ get_git_tags.py:
+      github.com/jkomijani/normflow_ get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-olive-coyote.sh
-        container: qc.ver_shabby-black-mayfly
+        - /usr/bin/env sh .sqa/script.droopy-tomato-javanese.sh
+        container: qc.ver_dorky-violet-moth
 timeout: 5400
